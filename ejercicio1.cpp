@@ -3,8 +3,10 @@ using namespace std;
 
 int main (){
     int n, max, A[30];
+    cout << "Ingrese el numero de elementos del arreglo: ";
     cin >> n;
     for (int i = 0; i < n; i++){
+        cout << "Ingrese el elemento " << i + 1 << ": ";
         cin >> A[i];
     }
     max = A[0];
@@ -13,6 +15,6 @@ int main (){
             max = A[i];
         }
     }
-    cout << max;
+    cout << "El mayor elemento es: " << max;
     return 0;
 }
