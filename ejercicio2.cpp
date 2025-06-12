@@ -5,6 +5,9 @@ int main(){
     int S, n, prom, A[30];
     cout << "Detector de numeros mayores al promedio\n";
     cout << "Ingrese la cantidad de numeros a ingresar: ";  cin >> n;
+    if (n < 1 && n > 30){
+        cout << "Numero invalido. Debe ingresar un numero entre 1 a 30.";
+    }
     S = 0;
     for (int i = 0; i < n; i++){
         cout << "Ingrese el numero "<<i + 1<<": ";
