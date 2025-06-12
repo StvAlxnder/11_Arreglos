@@ -5,6 +5,9 @@ int main(){
     int n, A[30], aux;
     cout << "Intercambiador de elementos equidistantes\n";
     cout << "Ingrese la cantidad de elementos: ";   cin >> n;
+    if (n < 1 && n > 30){
+        cout << "Numero invalido. Debe ingresar un numero entre 1 a 30.";
+    }
     for (int i = 0; i < n; i++){
         cout << "Ingrese el numero "<<i+1<<": ";  cin >> A[i];
     }
